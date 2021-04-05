@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
     <title>RETO 2 - SHOWCASE</title>
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid menu-nav">
@@ -19,33 +20,33 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="showcase">
-            <div class="meat">
-                <img src="images/arreglo-puchero.png" id="arreglo-puchero" alt="arreglo-puchero" />
-                <img src="images/compango.png" id="compango" alt="compango" />
-                <img src="images/hueso-garron.png" id="hueso-garron" alt="hueso-garron" />
-            </div>
-            <div class="bear">
-                <img src="images/agua-bronchales.png" id="agua-bronchales" alt="agua-bronchales" />
-                <img src="images/coca-cola.png" id="coca-cola" alt="coca-cola" />
-                <img src="images/steingburg.png" id="steinburg" alt="steinburg" />
-            </div>
-            <div class="cereals">
-                <img src="images/bolas-miel.png" id="bolas-miel" alt="bolas-miel" />
-                <img src="images/chocoflakes.png" id="chocoflakes" alt="chocoflakes" />
-                <img src="images/kellogg.png" id="kellogg" alt="kellogg" />
-            </div>
-        </section>
-        <section class="cart">
-            <h3>CESTA DE LA COMPRA</h3>
-            <div class="cart-icon">
-                <span class="badge rounded-pill bg-danger" id="badge">0</span>
-                <img src="images/cart.png" id="cart" alt="cart" />
-            </div>
-        </section>
 
-    </main>
+    <div id="page">	
+      <section id="products" class="products">
+        <h1>Productos</h1>
+        <ul>
+          <li id="product-1" data-price="2.80"><span><img src="images/bolas-miel.png" id ="product-image-1" alt="bolas-de-miel" width="60px" />Bolas de miel </span></li>
+          <li id="product-2" data-price="3.20"><img src="images/chocoflakes.png" id ="product-image-2" alt="chocoflakes" width="60px"/><span>Chocoflakes</span></li>
+          <li id="product-3" data-price="3.80"><img src="images/kellogg.png" id ="product-image-3" alt="kelloggs" width="60px"/><span>Cereales Kellog</span></li>
+          <li id="product-4" data-price="2.50"><img src="images/agua-bronchales.png" id ="product-image-4" alt="agua-bronchales" width="60px"/><span>Agua bronchales</span></li>
+          <li id="product-5" data-price="1.25"><img src="images/coca-cola.png" id ="product-image-5" alt="coca-cola" width="60px"/><span>Coca Cola</span></li>
+          <li id="product-6" data-price="4.25"><img src="images/steingburg.png" id ="product-image-6" alt="steinburg" width="60px"/><span>Cerveza steinburg</span></li>
+        </ul>
+      </section>
+      <br/>
+      <br/>
+      <section id="cart" class="shopping-cart">
+        <h1>Cesta de la compra</h1>
+        <ul id ='basket'>
+        </ul>
+        <hr/>
+        <button type="button" class="btn btn-danger" onclick="emptyBasket()">Vaciar cesta</button>
+        <br/>
+        <span>Total cesta - </span>
+        <span class="total">0.00</span>
+        <span>€</span>
+      </section>
+	</div>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
