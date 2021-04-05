@@ -1,5 +1,9 @@
 'use strict'
 
+const welcome = () => {
+    alert("Bienvenido a la tienda online de MERCADONA. Disfruta comprando!");
+}
+
 const addEvent = (element, event, delegate )  => {
     if (typeof (window.event) != 'undefined' && element.attachEvent)
         element.attachEvent(`on${event}`, delegate);
