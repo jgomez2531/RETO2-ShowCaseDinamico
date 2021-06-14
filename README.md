@@ -6,11 +6,11 @@
 
 
  ## Tecnologías:
- > :white_check_mark:HTML5
+ > :white_check_mark: HTML5
  >
- > :white_check_mark:CSS3
+ > :white_check_mark: CSS3
  >
- > :white_check_mark:JavaScript ES6
+ > :white_check_mark: JavaScript ES6
  
 
  ## Live Preview:
